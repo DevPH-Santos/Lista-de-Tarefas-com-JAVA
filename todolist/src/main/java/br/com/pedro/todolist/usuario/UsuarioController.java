@@ -11,7 +11,7 @@ public class UsuarioController {
     
     @PostMapping("/")
     public void create(@RequestBody ModeloUsuario modeloUsuario){//vai ta pegando as informações do corpo da requisição, tipo o POST do PHP
-        System.out.println(modeloUsuario.username);
+        System.out.println(modeloUsuario.getSenha());
     }
 
 }
